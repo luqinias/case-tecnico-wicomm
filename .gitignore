@@ -1,0 +1,28 @@
+# Dependências e build
+node_modules/
+dist/
+coverage/
+*.local
+
+# Ambiente
+.env
+.env.*
+
+# Editor / SO
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Planejamento local (spec-kit) e ferramentas de IA — mantidos fora do repositório
+.specify/
+specs/
+.claude/
+CLAUDE.md
+
+# Material do case
+*.pdf
+.figma-cache/
