@@ -26,3 +26,4 @@ CLAUDE.md
 # Material do case
 *.pdf
 .figma-cache/
+dist-ssr/
