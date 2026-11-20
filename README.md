@@ -4,7 +4,7 @@ Reprodução da home **Amakha Paris** a partir do Figma do teste prático da Wic
 **React + TypeScript + Tailwind CSS**. Tem carrinho com mini cart lateral, carrosséis, menus,
 contagem regressiva, favoritos, busca e newsletter, e funciona do celular ao desktop.
 
-- **Página publicada:** _adicionar link da Vercel após o deploy_
+- **Página publicada:** https://case-tecnico-wicomm.vercel.app
 - **Layout de referência:** frame `AMAKHA - HOME` (1280 × 5959)
 
 ---
@@ -134,14 +134,14 @@ O Figma do teste também tinha **camadas ocultas** com dicas de comportamento, e
 | **Git e README (5)**                  | Commits pequenos em Conventional Commits ao longo do desenvolvimento; este README.                                                                                                                                                                                                                                                                      |
 | **Performance (5)**                   | HTML **pré-renderizado** e hidratado; WebP com `srcset`/`sizes`; `width`/`height` em toda imagem (CLS ≈ 0); `loading="lazy"` abaixo da dobra; preload + `fetchpriority="high"` no banner; fontes self-hosted só com os pesos usados.                                                                                                                    |
 
-**Lighthouse (build local, `vite preview` sem compressão):**
+**Lighthouse (página publicada na Vercel):**
 
 | Perfil  | Performance | Acessibilidade | Boas práticas | SEO |
 | ------- | ----------- | -------------- | ------------- | --- |
+| Mobile  | 99          | 96             | 100           | 100 |
 | Desktop | 100         | 96             | 100           | 100 |
-| Mobile  | 91–96       | 96             | 100           | 100 |
 
-O único item de acessibilidade pendente é contraste, explicado nas decisões abaixo.
+No mobile: FCP 1,5 s, LCP 1,8 s, CLS 0,004. O único item de acessibilidade pendente é contraste, explicado nas decisões abaixo.
 
 **Testes** (`npm test`): reducer do carrinho, mini cart integrado ao card (adicionar, somar,
 alterar, remover, persistir, fechar), contagem regressiva com timers falsos e validação/feedback
